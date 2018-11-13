@@ -1,0 +1,9 @@
+[
+    {
+        "definitionName": "lockStepVersion",
+        "policyName": "shack",
+        "version": "0.0.1",
+        "nextBump": "patch",
+        "mainProject": "@codebits/shack"
+    }
+]

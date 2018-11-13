@@ -1,0 +1,46 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+
+    "rushVersion": "5.5.2",
+
+    "pnpmVersion": "2.18.2",
+
+    "pnpmOptions": {
+        "strictPeerDependencies": true
+    },
+
+    "nodeSupportedVersionRange": ">=8.9.4 <9.0.0 || >=10.13.0 <11.0.0",
+
+    "ensureConsistentVersions": true,
+
+    "projectFolderMinDepth": 1,
+    "projectFolderMaxDepth": 3,
+
+    "approvedPackagesPolicy": {
+        "reviewCategories": ["libraries", "tests"],
+        "ignoredNpmScopes": ["@types", "@codebits"]
+    },
+
+    "gitPolicy": {},
+    "repository": {},
+
+    "eventHooks": {
+        "preRushInstall": [
+            // TODO: "common/scripts/pre-rush-install.js"
+        ],
+        "postRushInstall": [],
+        "preRushBuild": [],
+        "postRushBuild": []
+    },
+
+    "variants": [],
+
+    "projects": [
+        {
+            "packageName": "@codebits/shack",
+            "projectFolder": "bin/shack",
+            "reviewCategory": "libraries",
+            "versionPolicyName": "shack"
+        }
+    ]
+}

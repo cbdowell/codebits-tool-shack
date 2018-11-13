@@ -1,0 +1,25 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/command-line.schema.json",
+
+    "commands": [
+        {
+            "commandKind": "bulk",
+            "name": "my-bulk-command",
+            "summary": "Example bulk custom command",
+            "description": "This is an example custom command that runs separately for each project",
+            "safeForSimultaneousRushProcesses": false,
+            "enableParallelism": false,
+            "ignoreMissingScript": false
+        },
+        {
+            "commandKind": "global",
+            "name": "my-global-command",
+            "summary": "Example global custom command",
+            "description": "This is an example custom command that runs once for the entire repo",
+            "safeForSimultaneousRushProcesses": false,
+            "shellCommand": "node common/scripts/my-global-command.js"
+        }
+    ],
+
+    "parameters": []
+}

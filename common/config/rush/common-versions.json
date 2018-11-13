@@ -1,0 +1,12 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/common-versions.schema.json",
+
+    "preferredVersions": {
+        "ts-node": "7.0.1",
+        "typescript": "3.1.6",
+        "prettier": "1.15.2",
+        "pretty-quick": "1.8.0"
+    },
+
+    "allowedAlternativeVersions": {}
+}
